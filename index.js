@@ -1,7 +1,7 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
-
-	return `${input} & ${postfix}`
-}
+module.exports =
+	typeof process.env.RUNKIT_ENDPOINT_PATH === "string" &&
+	typeof process.env.RUNKIT_ENDPOINT_URL === "string" &&
+	typeof process.env.RUNKIT_MOUNT_PATH === "string" &&
+	process.env.RUNKIT_HOST === "runkit.com"

@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "is-runkit",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Check if the current environment is Runkit.",
+	"repository": "https://github.com/Richienb/is-runkit.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -10,9 +10,6 @@
 		"index.js",
 		"index.d.ts"
 	],
-	"engines": {
-		"node": ">=10"
-	},
 	"scripts": {
 		"lint": "xo",
 		"test": "yarn lint && ava"
